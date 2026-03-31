@@ -5,3 +5,4 @@
 
 - Welcome to Bootcamp.
   - We are going to learn Java
+  - hello
