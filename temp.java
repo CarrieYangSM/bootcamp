@@ -56,15 +56,34 @@ System.out.println(output);
 */
 
 //"725094849" Find the largest index of the largest digit, 8
-String s = "725094940";
-int maxValue = s.charAt(0)-'0';
-int maxValueLocation = 0;
-for (int i = 1; i < s.length(); i++) {
-    if (maxValue<=(s.charAt(i)-'0')){
-      maxValue = (s.charAt(i)-'0');
-      maxValueLocation = i;
+String s = "725094849";
+//method 1
+/*
+char maxDigit = '0';
+int largestIndex = -1;
+char currentDigit = '0';
+for (int i = 0; i < s.length(); i++) {
+    currentDigit = s.charAt(i);
+    if (currentDigit>=maxDigit){
+      maxDigit = currentDigit;
+      largestIndex = i;
     }
-} System.out.println("The largest index is " + maxValueLocation + " and the largest digit is " + maxValue);
+} System.out.println("The largest index is " + largestIndex + " and the largest digit is " + maxDigit);
+*/
+//method 2
+int maxDigit = Integer.MIN_VALUE;
+int largestIndex = -1;
+int currentDigit = Integer.MIN_VALUE;
+for (int i = 0; i < s.length(); i++) {
+    currentDigit = s.charAt(i)-'0';
+    if (currentDigit>=maxDigit){
+      maxDigit = currentDigit;
+      largestIndex = i;
+    }
+} System.out.println("The largest index is " + largestIndex + " and the largest digit is " + maxDigit);
+
+
+
 
   }
   }
