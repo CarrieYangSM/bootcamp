@@ -27,7 +27,7 @@ public static void main(String[] args) {
 
     if (exp >= 10){
       bonus = salary * 0.2;
-    } else if (exp >=5 || exp <9){
+    } else if (exp >=5 && exp <9){
       bonus = salary * 0.1;
     } else {
       bonus = salary * 0.05;
