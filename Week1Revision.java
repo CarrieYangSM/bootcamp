@@ -32,6 +32,28 @@ public class Week1Revision{
     System.out.println(++a + a++ *3);// 11 + 11 *3
     System.out.println(a); // 10 + 1 +1
 
+    String s = "hello";
+    String sEven = "";
+    String sOdd = "";
+    for (int i =0; i<s.length(); i++){
+      if (i%2==0){
+        sEven += s.charAt(i);
+      } else {
+        sOdd += s.charAt(i);
+      }
+    }    
+    
+    System.out.println("The string even charaters: " + sEven +"\nThe string odd charaters: " + sOdd);
+
+    //counting -> target
+    //how many 'l' in the string
+    int numberOfL = 0;
+    for (int i=0; i<s.length(); i++){
+      if (s.charAt(i)=='l'){
+        numberOfL++;
+      }
+    }
+    System.out.println(numberOfL);
 
   }
 }
