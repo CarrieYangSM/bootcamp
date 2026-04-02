@@ -6,7 +6,7 @@ public class JavaExercise5{
     boolean isTargetFound = false;
 
     for (int i=0;i<str.length();i++){
-      if(str.charAt(i)=='c'){
+      if(str.charAt(i)==target){
         isTargetFound = true;
         break;
       }
