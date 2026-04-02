@@ -5,17 +5,24 @@ public static void main(String[] args) {
     // 2. Consonant (anothor 21 letters)
     // 3. Not an alphabet
     char ch = 'i';
-    boolean isAlphabet = true;
+    boolean isAlphabet = false;
     boolean isVowel = false;
 
     if (ch<64 || (ch>=91 && ch<=96) || ch>=123){
       isAlphabet = false;
     } else if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') {
+      isAlphabet = true;
       isVowel = true;
     } else{
+      isAlphabet = true;
       isVowel = false;
     }
-    System.out.println("Is the char an Alphbet: " + isAlphabet + "\nIs the char a Vowel: " + isVowel );
+
+    if (isAlphabet){
+      System.out.println("Is the char an Alphbet: " + isAlphabet + "\nIs the char a Vowel: " + isVowel );
+    }else{
+      System.out.println("Is the char an Alphbet: " + isAlphabet);
+    }
 
     // Take salary and years of experience, then calculate and print bonus
     // Experience ≥ 10 years → 20% bonus
